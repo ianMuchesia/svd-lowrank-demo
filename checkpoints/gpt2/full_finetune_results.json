@@ -1,0 +1,112 @@
+{
+    "experiment_name": "full_finetune",
+    "use_lora": false,
+    "rank": null,
+    "alpha": null,
+    "lr": 3e-05,
+    "epochs_run": 8,
+    "trainable_params": 124439808,
+    "total_params": 124439808,
+    "final_val_accuracy": 54.465756078659304,
+    "final_val_loss": 2.2713017904758455,
+    "avg_train_time_sec": 187.75269532203674,
+    "peak_gpu_memory_mb": 3171.845632,
+    "history": [
+        {
+            "epoch": 1,
+            "train_loss": 2.255851949320899,
+            "train_accuracy": 52.35980435000079,
+            "train_time_sec": 186.1200315952301,
+            "val_loss": 2.091614063978195,
+            "val_accuracy": 54.85566211372663,
+            "val_time_sec": 5.803096771240234,
+            "peak_gpu_memory_mb": 3170.578944,
+            "trainable_params": 124439808,
+            "total_params": 124439808
+        },
+        {
+            "epoch": 2,
+            "train_loss": 1.9970391550328996,
+            "train_accuracy": 55.741032269613704,
+            "train_time_sec": 186.46405696868896,
+            "val_loss": 2.0697930204868316,
+            "val_accuracy": 55.22619393587136,
+            "val_time_sec": 5.882940292358398,
+            "peak_gpu_memory_mb": 3171.196416,
+            "trainable_params": 124439808,
+            "total_params": 124439808
+        },
+        {
+            "epoch": 3,
+            "train_loss": 1.838634373744329,
+            "train_accuracy": 57.95683695657897,
+            "train_time_sec": 188.5768759250641,
+            "val_loss": 2.0664391136169433,
+            "val_accuracy": 55.335173883560984,
+            "val_time_sec": 5.841160774230957,
+            "peak_gpu_memory_mb": 3171.825664,
+            "trainable_params": 124439808,
+            "total_params": 124439808
+        },
+        {
+            "epoch": 4,
+            "train_loss": 1.7032226051224602,
+            "train_accuracy": 60.147369307801256,
+            "train_time_sec": 188.24597716331482,
+            "val_loss": 2.0805164194107055,
+            "val_accuracy": 55.352126319868255,
+            "val_time_sec": 5.861842632293701,
+            "peak_gpu_memory_mb": 3171.17952,
+            "trainable_params": 124439808,
+            "total_params": 124439808
+        },
+        {
+            "epoch": 5,
+            "train_loss": 1.574870104259915,
+            "train_accuracy": 62.19916706593447,
+            "train_time_sec": 187.5918731689453,
+            "val_loss": 2.120159660577774,
+            "val_accuracy": 55.07362200910588,
+            "val_time_sec": 5.814561128616333,
+            "peak_gpu_memory_mb": 3171.350528,
+            "trainable_params": 124439808,
+            "total_params": 124439808
+        },
+        {
+            "epoch": 6,
+            "train_loss": 1.4638634678390292,
+            "train_accuracy": 64.09090669769547,
+            "train_time_sec": 189.1861138343811,
+            "val_loss": 2.1422447538375855,
+            "val_accuracy": 55.030030030030034,
+            "val_time_sec": 5.823260068893433,
+            "peak_gpu_memory_mb": 3171.451392,
+            "trainable_params": 124439808,
+            "total_params": 124439808
+        },
+        {
+            "epoch": 7,
+            "train_loss": 1.3614928960137898,
+            "train_accuracy": 65.99501924383065,
+            "train_time_sec": 188.21568393707275,
+            "val_loss": 2.1977851593494417,
+            "val_accuracy": 54.88230165649521,
+            "val_time_sec": 5.900523662567139,
+            "peak_gpu_memory_mb": 3171.845632,
+            "trainable_params": 124439808,
+            "total_params": 124439808
+        },
+        {
+            "epoch": 8,
+            "train_loss": 1.2597230057583915,
+            "train_accuracy": 67.86148653984868,
+            "train_time_sec": 187.6209499835968,
+            "val_loss": 2.2713017904758455,
+            "val_accuracy": 54.465756078659304,
+            "val_time_sec": 5.840762376785278,
+            "peak_gpu_memory_mb": 3170.625024,
+            "trainable_params": 124439808,
+            "total_params": 124439808
+        }
+    ]
+}

@@ -67,3 +67,13 @@ At `k = 50`: `1025 × 50 = 51,250` parameters — **5× fewer** than the origina
 At `k = 10`: `~10,250` — **25× fewer**.
 
 The tradeoff: lower rank = fewer params = more reconstruction error. The singular value spectrum tells you how much quality you lose at each rank.
+
+
+## 6. Why a Random Matrix Gives a Flat Singular Value Spectrum
+When you plot the singular values of a randomly initialized matrix (e.g. `np.random.randn(512, 512)`), the graph looks nearly linear — no sharp drop-off, no "elbow."
+
+The reason: a random matrix has no structure. Every direction in the input space is equally important — there are no dominant patterns and no noise. The singular values spread out evenly because all 512 "features" carry roughly the same variance.
+
+**A trained weight matrix is the opposite.** After training, a few singular values become very large (the model concentrated its learned knowledge into a small number of dominant patterns), and the rest drop off sharply. That steep drop is what the elbow in the spectrum captures — it tells you where "signal" ends and "noise" begins.
+
+**The practical lesson:** always run SVD analysis on a *trained* weight matrix, not a random one. Loading from a checkpoint (e.g. GPT-2's `c_attn` layer) gives you the real spectrum with a visible elbow that tells you what rank to truncate at.
