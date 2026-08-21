@@ -22,4 +22,13 @@ def reconstruct_matrix(U_k, S_k,Vt_k):
 def compute_reconstruction_error(weight_matrix , W_compressed):
     
     return np.linalg.norm(weight_matrix-W_compressed)
+
+
+def compressed_parameter_count(m,n,k):
+    return (m*k) + k + (k*n)
+
+def compression_ratio(m,n,k):
+    
+    return  (m*n)/ compressed_parameter_count(m,n,k)
+    
     
