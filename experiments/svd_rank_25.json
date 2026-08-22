@@ -1,0 +1,39 @@
+{
+    "compression": {
+        "rank": 25,
+        "original_params": 2359296,
+        "compressed_params": 96025,
+        "compressed_ratio": 24.569601666232753,
+        "params_saved": 2263271,
+        "reconstruction_error": 199.39395141601562
+    },
+    "speed_original": {
+        "mean_time_sec": 0.48007760319997034,
+        "std_time_sec": 0.07879781528200545,
+        "min_time_sec": 0.4054446290001579,
+        "n_runs": 10,
+        "batch_size": 1,
+        "seq_len": 256
+    },
+    "speed_svd": {
+        "mean_time_sec": 0.46673044050012324,
+        "std_time_sec": 0.07381243739328709,
+        "min_time_sec": 0.3797383520004587,
+        "n_runs": 10,
+        "batch_size": 1,
+        "seq_len": 256
+    },
+    "loss_original": {
+        "cross_entropy_loss": 2.117276191711426,
+        "perplexity": 8.308475943207567,
+        "total_tokens": 256
+    },
+    "loss_svd": {
+        "cross_entropy_loss": 8.56319522857666,
+        "perplexity": 5235.382720088298,
+        "total_tokens": 256
+    },
+    "speedup": 1.0285971548921151,
+    "loss_delta": 6.445919036865234,
+    "Compression_ratio": "24.57x fewer params"
+}

@@ -12,3 +12,6 @@ build/
 *.pth
 *.bin
 data/
+
+experiments/*.jsonl
+week.md
